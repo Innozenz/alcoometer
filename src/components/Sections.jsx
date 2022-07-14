@@ -7,7 +7,7 @@ const Sections = (props) => {
                 <h2 className="font-semibold text-3xl mb-8">
                     {props.title}
                 </h2>
-                <label htmlFor={props.htmlFor}>{props.name}</label>
+                <label htmlFor={props.htmlFor}>{props.placeholder}</label>
                 <input id={props.id} type={props.type} placeholder={props.placeholder}
                        className="text-input" {...props.register} />
                 {props.message &&

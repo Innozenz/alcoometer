@@ -52,7 +52,7 @@ const IndexPage = () => {
                     <form>
                         {formStep >= 0 && (
                             <Sections type="text" id="username" placeholder="Prénom" htmlFor="username" title="Identité"
-                                      name="Prénom"
+                                      name="prénom"
                                       formStep={formStep === 0 ? "block" : "hidden"} register={{
                                 ...register("username", {
                                     required: {
