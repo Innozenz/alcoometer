@@ -19,8 +19,8 @@ const IndexPage = () => {
     const data = watch();
     const calcHomme = (((data.beer * 250 * 0.05) + (data.alcool * 30 * 0.40) + (data.whine * 100 * 0.12) + (data.cocktail * 30 * 0.40)) * 0.8 / (0.68 * data.weight)).toFixed(2);
     const calcFemme = (((data.beer * 250 * 0.05) + (data.alcool * 30 * 0.40) + (data.whine * 100 * 0.12) + (data.cocktail * 30 * 0.40)) * 0.8 / (0.55 * data.weight)).toFixed(2);
-    const elemHomme = ((calcHomme - 0.50) / 0.125).toFixed(2);
-    const elemFemme = ((calcFemme - 0.50) / 0.0925).toFixed(2);
+    const elemHomme = ((calcHomme - 0.50) / 0.125).toFixed(0);
+    const elemFemme = ((calcFemme - 0.50) / 0.0925).toFixed(0);
 
     const renderButton = () => {
         if (formStep > 4) {
